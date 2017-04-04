@@ -1,6 +1,8 @@
 function Victory() {
-    alert('You did it!\n');
-	location.reload();
+	let modal = document.getElementById('modal');
+	modal.style.display = "block";
+	let congrats = document.getElementById('congrats');
+	congrats.style.display = "block";
 }
 
 function Button(id, assoc, color) {
@@ -88,6 +90,12 @@ window.addEventListener('load', function() {
     for (let b of btns) {
         b.assignBtn(b.assocId, btns);
     }
-
-    alert('Turn off all the boxes!');
+	let modal = document.getElementById("modal");
+	let welcome = document.getElementById("welcome");
+	modal.style.display = "block";
+	let closeBtn = document.getElementById("close");
+	closeBtn.onclick = function() {
+		welcome.style.display = "none";
+		modal.style.display = "none";
+	}
 });

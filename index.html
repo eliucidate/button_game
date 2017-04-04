@@ -7,6 +7,18 @@
     <script type="text/javascript" src="buttongame.js"></script>
 </head>
 <body>
+	<div id="modal">
+		<div id="welcome" class="content">
+			<span id="close" class="close">&times;</span>
+			<h2>Try to turn all the blocks black. Good luck!</h2>
+	  </div>
+	  <div id="congrats" class="content">
+		<span id="close" class="close">&times;</span>
+		<h2>Congratulations! You finished the puzzle!</h2>
+		<button id="retry" onClick = "location.reload();"> Try again </button>
+	  </div>
+	</div>
+	
     <div id="btns"></div>
 </body>
 </html>
