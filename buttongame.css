@@ -1,0 +1,14 @@
+html, body { height:100%; margin:0; padding:0; }
+div {
+	position: fixed;
+}
+
+.cButton {
+	box-sizing: border-box;
+	border: 1px solid white;
+	width: 50%;
+}
+
+.cButton:hover {
+	border:3px solid black;
+}
