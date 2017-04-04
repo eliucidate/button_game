@@ -1,0 +1,1 @@
+Blocks are generated and tied to their respective HTML elements. Though the current implementation demonstrates the program with 4 blocks, increasing block count can be done simply by changing 'const BTN_COUNT' in the javascript file. However, doing so will NOT guarantee that a viable solution exists.

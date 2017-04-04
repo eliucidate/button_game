@@ -29,7 +29,6 @@ Button.prototype.changeState = function() {
 }
 
 Button.prototype.clicked = function(btns) {
-	//console.log(btns);
     this.changeState();
 	this.assocPtr.changeState();
     let winCond = 1;
@@ -50,7 +49,7 @@ function getRandomInt(min, max) {
 }
 
 window.addEventListener('load', function() {
-    const BTN_CT = 4;
+    const BTN_CT = 4; //Change this variable to produce a puzzle with more buttons!
     let btns = []
     const RIGHT = 100 / Math.floor(BTN_CT / 2);
     const LEFT = 100 / (BTN_CT - Math.floor(BTN_CT / 2));
