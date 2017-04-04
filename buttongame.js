@@ -27,7 +27,7 @@ Button.prototype.changeState = function() {
 }
 
 Button.prototype.clicked = function(btns) {
-	console.log(btns);
+	//console.log(btns);
     this.changeState();
 	this.assocPtr.changeState();
     let winCond = 1;
